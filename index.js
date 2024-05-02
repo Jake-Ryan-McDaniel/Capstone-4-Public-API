@@ -10,7 +10,7 @@ const port = 3000;
 //wasn't sure if I needed this or not so I just added it just in case. I didn't end up needing it for the Ron Swanson quotes.
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static("public"));
+app.use(express.static("./public"));
 
 // the initial landing page.
 app.get("/", (req, res) =>{
