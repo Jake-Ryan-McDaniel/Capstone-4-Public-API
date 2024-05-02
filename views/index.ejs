@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+<!-- The two comments down below are so I can save the code I have there but not remove it so I can potentially come back later and fix it or implement it. -->
+<div class="container my-5 gradient-background">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+      <h1 class="col-lg-8 mx-auto">
+        Get a quote from the man...the myth...the legend...RON SWANSON!!!<!-- <span class="fs-5">or a random fact, maybe..</span> -->
+      </h1>
+
+      <h2 class="my-5">
+         <%= content %>
+      </h2>
+
+      <div class="d-inline-flex gap-2 mb-5">
+        <form id="myForm" method="post">
+        <input id= "ron" class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="submit" value="Click here to get a random brewery" formaction="/ron">
+<!-- <input id = "fact" class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="submit" value="Click here to get a fact" formaction="/fact">  -->
+
+        </form>
+      </div>
+    </div>
+  </div>
+    
+
+<%- include('partials/footer') %>
